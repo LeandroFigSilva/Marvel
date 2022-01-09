@@ -10,5 +10,7 @@ app.use((req, res, next) => {
 app.get('/', function (req, res, next) {
     res.redirect('/heroes');
 });
-app.listen(8080, 'localhost');
-console.log('MyProject Server is Listening on port 8080')
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
