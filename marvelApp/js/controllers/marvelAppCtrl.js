@@ -4,7 +4,7 @@ angular.module('marvelApp').controller('marvelAppCtrl', function($scope, $http, 
         
         const keys = marvelKeys.getKeys();
 
-        const baseUrl = 'http://gateway.marvel.com/v1/public/characters';
+        const baseUrl = 'https://gateway.marvel.com/v1/public/characters';
         // const publicKey = '5a237863b3cc2061003cbbc4fe20dc06';
         // const privateKey = 'fbf255068eccea6d0ef951b9f25626b57ab2fe72';
         // const ts = Number(new Date());

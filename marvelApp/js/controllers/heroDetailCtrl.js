@@ -2,7 +2,7 @@ angular.module('marvelApp').controller('heroDetailCtrl', function($scope, $http,
     console.log($routeParams.id)
 
     const keys = marvelKeys.getKeys();
-    const baseUrl = 'http://gateway.marvel.com/v1/public/characters/';
+    const baseUrl = 'https://gateway.marvel.com/v1/public/characters/';
 
     let config= { 
         params : {
