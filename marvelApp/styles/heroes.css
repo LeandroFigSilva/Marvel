@@ -172,13 +172,13 @@ a:hover .left:after {
   /* body {
     background: red;
   } */
-  .container,
+  .containerHeroes,
   .containerHero {
     width: 100vw;
   }
 
   .logo {
-    width: 100vw;
+    width: 100%;
     margin-bottom: 10px;
   }
   .logo img {
