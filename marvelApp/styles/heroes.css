@@ -70,6 +70,7 @@ body {
 .backArrow {
   display: inline-block;
   vertical-align: middle;
+  width: 60px;
 }
 
 a {
@@ -129,7 +130,7 @@ a:hover .left:after {
 
 .heroAll {
   border: 1px gray solid;
-  max-width: 100vh;
+  width: 85vw;
 }
 .heroCard {
   background-color: white;
