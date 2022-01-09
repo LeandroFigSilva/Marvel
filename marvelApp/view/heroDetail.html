@@ -1,0 +1,42 @@
+<div ng-controller="heroDetailCtrl">
+    <div class="containerHero">
+
+        <div class="backArrow">
+            <a href="/">
+                <span class="left"></span>
+            </a>
+        </div>
+        <div class="heroAll">
+            <div class="heroCard">
+                <div class="heroCardDetail">
+                    <div class="heroImg">
+
+                        <img width="100%"
+                            ng-src="{{hero.thumbnail.path + '/portrait_fantastic.' + hero.thumbnail.extension}}"
+                            alt="{{hero.name}}">
+                    </div>
+                    <div>
+                        <p class="heroName">{{hero.name}}</p>
+
+                        <p class="heroDescr">
+                            {{hero.description}}
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="heroName">Comics:</p>
+                    <hr>
+                </div>
+                <!-- <div id="comics">
+                    <div class="comicItem" ng-repeat="comic in heroComics">
+
+                        <img width="100%" ng-src="{{comic.thumbnail.path + '.' + comic.thumbnail.extension}}"
+                            title="{{comic.title}}">
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+
+</div>

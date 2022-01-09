@@ -1,0 +1,19 @@
+<div ng-controller="marvelAppCtrl">
+
+    <input type="text" ng-model="txtHero" placeholder="Personagem">
+    <button ng-click="findHero()">Buscar</button>
+    <hr>
+    <div class="container">
+        <div class="card" ng-repeat="hero in heroes" ng-click="heroeDetail(hero.id)">
+            <div class="thumb">
+                <img width="100%" ng-src="{{hero.thumbnail.path + '/standard_small.' + hero.thumbnail.extension}}"
+                    alt="">
+            </div>
+            <div>
+                <span>{{hero.name}}</span>
+
+            </div>
+
+        </div>
+    </div>
+</div>
