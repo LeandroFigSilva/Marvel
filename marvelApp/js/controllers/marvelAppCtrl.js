@@ -33,10 +33,11 @@ angular.module('marvelApp').controller('marvelAppCtrl', function($scope, $http, 
             // $scope.heroes = filterHero
             if($scope.txtHero == ''){
                 delete config.params.nameStartsWith
-                config.params.orderBy = 'modified';
+                
             }else{
                 config.params.nameStartsWith = $scope.txtHero;
                 config.params.orderBy = 'name';
+                config.params.offset = 0;
             }
             getHeroes();
         }

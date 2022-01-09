@@ -156,6 +156,9 @@ a:hover .left:after {
 }
 
 @media (max-width: 600px) {
+  body {
+    background-color: red;
+  }
   .container,
   .containerHero {
     width: 50vw;
