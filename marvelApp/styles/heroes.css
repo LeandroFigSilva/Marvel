@@ -20,21 +20,34 @@ body {
   color: rgba(0, 0, 0, 0.84) !important;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+.container {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+.logo img {
+  width: 250px;
 }
 
 /* List */
 
-.container {
+.containerHeroes {
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 100vw;
+}
+
+#busca {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .thumb {
@@ -156,11 +169,20 @@ a:hover .left:after {
 }
 
 @media (max-width: 600px) {
-  body {
-    background-color: red;
-  }
+  /* body {
+    background: red;
+  } */
   .container,
   .containerHero {
-    width: 50vw;
+    width: 100vw;
+  }
+
+  .logo {
+    width: 100vw;
+    margin-bottom: 10px;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
   }
 }
