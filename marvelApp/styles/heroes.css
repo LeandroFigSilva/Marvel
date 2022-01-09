@@ -120,7 +120,6 @@ a:hover .left:after {
 }
 
 .heroImg {
-  border: 1px gray solid;
   width: 270px;
   height: auto;
   margin-right: 5px;
@@ -145,6 +144,7 @@ a:hover .left:after {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
+  margin-top: 5px;
 }
 .comicItem {
   margin: 0 5px;

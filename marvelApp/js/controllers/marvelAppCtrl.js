@@ -18,7 +18,8 @@ angular.module('marvelApp').controller('marvelAppCtrl', function($scope, $http, 
                 "ts": keys.ts,
                 "apikey": keys.publicKey,
                 "hash": keys.hash,
-                //"limit": 50,
+                "limit": 50,
+                "offset": Math.floor(Math.random() * 1000)
                 //"nameStartsWith" : 'A',
                 //"orderBy" : 'modified'
             }
