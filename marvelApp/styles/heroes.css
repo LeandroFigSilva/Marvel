@@ -152,4 +152,5 @@ a:hover .left:after {
 .comicItem {
   margin: 0 5px;
   min-width: 70px;
+  max-width: 100px;
 }
