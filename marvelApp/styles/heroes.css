@@ -112,7 +112,7 @@ a:hover .left:after {
 .left:after {
   content: "";
   display: inline-block;
-  margin-top: 0.5em;
+  margin-top: 0.45em;
   margin-left: 0.7em;
   width: 1em;
   height: 1em;
@@ -174,7 +174,7 @@ a:hover .left:after {
   } */
   .containerHeroes,
   .containerHero {
-    width: 100vw;
+    width: 100%;
   }
 
   .logo {
