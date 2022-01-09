@@ -141,16 +141,23 @@ a:hover .left:after {
 .heroCardDetail {
   display: flex;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 #comics {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
+  flex-wrap: wrap;
   margin-top: 5px;
 }
 .comicItem {
   margin: 0 5px;
   min-width: 70px;
   max-width: 100px;
+}
+
+@media (max-width: 600px) {
+  .container,
+  .containerHero {
+    width: 50vw;
+  }
 }
